@@ -44,14 +44,81 @@
     </header>
     
     <main>
-        Photo Carousel
-        <img src="Images/Team Pics/Team2016-1.jpg" alt="2016 Walk Team">
-        <img src="Images/Team Pics/Team2017-1.jpg" alt="2017 Walk Team">
-        <img src="Images/Team Pics/Team2018-1.JPG" alt="2018 Walk Team">
-        <img src="Images/Team Pics/Team2019-1.JPG" alt="2019 Walk Team">
-        <img src="Images/Team Pics/Team2020-1.JPG" alt="2020 Walk Team">
-        <img src="Images/Team Pics/Team2020-3.JPG" alt="2020 Socially-Distanced-But-Excited Walk Team">
-        
+        <div id="teamPhotoCarousel" class="photo carousel" data-ride="carousel">
+            <!-- Indicators=dots at bottom of pic representing all pics-->
+            <ol class="carousel-indicators">
+                <li data-target="#teamPhotoCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#teamPhotoCarousel" data-slide-to="1"></li>
+                <li data-target="#teamPhotoCarousel" data-slide-to="2"></li>
+                <li data-target="#teamPhotoCarousel" data-slide-to="3"></li>
+                <li data-target="#teamPhotoCarousel" data-slide-to="4"></li>
+                <li data-target="#teamPhotoCarousel" data-slide-to="5"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active"
+                    <img src="Images/Team Pics/Team2016-1.jpg" alt="2016 Walk Team">
+                    <div class="carousel-caption">
+                        <h3>2016 Take Steps Walk</h3>
+                        <p>JP's Porcelain Punishers Team Pic</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Images/Team Pics/Team2017-1.jpg" alt="2017 Walk Team">
+                    <div class="carousel-caption">
+                        <h3>2017 Take Steps Walk</h3>
+                        <p>JP's Porcelain Punishers Team Pic</p>
+                    </div>
+                 </div>
+
+                <div class="item">
+                    <img src="Images/Team Pics/Team2018-1.JPG" alt="2018 Walk Team">
+                    <div class="carousel-caption">
+                        <h3>2018 Take Steps Walk</h3>
+                        <p>JP's Porcelain Punishers Team Pic</p>
+                    </div>
+                 </div>
+                
+                <div class="item">
+                    <img src="Images/Team Pics/Team2019-1.JPG" alt="2019 Walk Team">
+                    <div class="carousel-caption">
+                        <h3>2019 Take Steps Walk</h3>
+                        <p>JP's Porcelain Punishers Team Pic</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Images/Team Pics/Team2020-1.JPG" alt="2020 Walk Team">
+                    <div class="carousel-caption">
+                        <h3>2020 Take Steps Walk</h3>
+                        <p>JP's Porcelain Punishers Team Pic</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Images/Team Pics/Team2020-3.JPG" alt="2020 Socially-Distanced-But-Excited Walk Team">
+                    <div class="carousel-caption">
+                        <h3>2020 Take Steps Walk</h3>
+                        <p>JP's Porcelain Punishers "Socially-Distanced-But-Still-Excited" Team Pic</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#teamPhotoCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <a class="right carousel-control" href="#teamPhotoCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
         <section>
             <h2>Jack's Story</h2>
             <p>
@@ -61,7 +128,7 @@
 
     </main>
 
-    <footer>
+    <footer id="main-footer">
         <p>JP's Porcelain Punishers</p>
         <p>Follow us!
             <a href="https://www.facebook.com/jpsporcelainpunishers/">Facebook</a>
