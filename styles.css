@@ -1,13 +1,17 @@
-html {
+body {
     background-color: burlywood;
     font: brown;
 }
 
-/* body {
-    font: brown;
-} */
-
 header {
     display: block;
     font-family: fantasy;
+    text-align: center;
+}
+
+.teamLogo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
 }
