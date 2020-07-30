@@ -1,6 +1,6 @@
 body {
-    background-color: beige;
-    font: brown;
+    background-color: brown;
+    font: beige;
 }
 
 header {
@@ -10,10 +10,11 @@ header {
 }
 
 .teamLogo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    align-self: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 75%;
+    align-self: left;
+    padding: 10%;
 }
 
 /* CSS for Photo Carousel */
