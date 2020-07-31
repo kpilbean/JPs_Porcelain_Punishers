@@ -43,3 +43,24 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex-1].style.display = "block";  
 dots[slideIndex-1].className += " active";
 }
+
+
+// Email Validation for More Info Signup
+// var name = document.forms["RegForm"]["Name"];			 
+// var email = document.forms["RegForm"]["EMail"]; 
+
+// if (name.value == "")								 
+// { 
+//     alert("Please enter your name."); 
+//     name.focus(); 
+//     return false; 
+// } 
+
+// if (email.value == "")								 
+// { 
+//     alert("Please enter a valid e-mail address."); 
+//     email.focus(); 
+//     return false; 
+// }
+
+// return true; 
