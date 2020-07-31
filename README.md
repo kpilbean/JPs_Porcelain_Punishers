@@ -5,11 +5,11 @@ Jack's CCF Take Steps Walk Team Website.
 Home Page
   Header (across all pages of site)
     Menu items (Home, About Us, Fundraising/Events, Press/Publicity, Help Us!, Contact Us)
-      Left justified on full, hamburger left corner when reduced
+      Left justified on full, hamburger left corner when reduced ***Change to right inline justify/right hamburger.***
     Team logo 
-      Center justified
+      Center justified ***Change to left justify and rounded corners instead of circle.***
     Donate Now button 
-      Right justified, links to CCF walk team fundraising page
+      Right justified, links to CCF walk team fundraising page ***Change to top right corner.***
 
   Photo carousel
     Stretched full width of page

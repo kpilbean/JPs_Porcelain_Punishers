@@ -6,6 +6,15 @@
 //     clear: BroadcastChannel;
 // }
 
+// Hamburger Menu
+function ToggleNavItems() {
+    let navItems = document.querySelectorAll('nav > a');
+    for(let i = 0; i < navItems.length; i++){
+        navItems[i].classList.toggle('visible-nav-item');
+    }
+}
+
+
 // Photo carousel/slideshow
 
 var slideIndex = 1;
