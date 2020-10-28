@@ -45,13 +45,13 @@ Fundraising/Events
 Press/Publicity
 	Links to TV and radio spots from 2017 Honored Hero year.
 
-Help Us!
+Help Us!  ***Good page to implement most of JavaScript Class Requirements***
 	Options for:
     Volunteer for Kickball and/or walk sign up.
     Make straight donation – buttons for $10, $25, $50, $75, $100, and Other $____.
     Kickball sponsorship signup/donation – different levels/amounts plus option to download sponsorship form to fill out and mail in with check.
 
-Contact Us
+Contact Us  ***Good page to implement most of JavaScript Class Requirements***
 	Social Media Links – Facebook and Instagram team pages
 	Email address
 	Mailing address
