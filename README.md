@@ -45,13 +45,17 @@ Fundraising/Events
 Press/Publicity
 	Links to TV and radio spots from 2017 Honored Hero year.
 
-Help Us!  ***Good page to implement most of JavaScript Class Requirements***
+Help Us!  **Good page to implement most of JavaScript Class Requirements**
+**Add form to volunteer to help with Kickball event**
+**Add digital form of Kickball sponsorship signup**\
+**Either add form to make donation or include direct link to CCF page to donate to team**
 	Options for:
     Volunteer for Kickball and/or walk sign up.
     Make straight donation – buttons for $10, $25, $50, $75, $100, and Other $____.
     Kickball sponsorship signup/donation – different levels/amounts plus option to download sponsorship form to fill out and mail in with check.
 
-Contact Us  ***Good page to implement most of JavaScript Class Requirements***
+Contact Us  **Good page to implement most of JavaScript Class Requirements**    
+**Possible spot for JS by adding window or link of FB and Insta pages you could scroll through under the Social Media Links spot**
 	Social Media Links – Facebook and Instagram team pages
 	Email address
 	Mailing address
