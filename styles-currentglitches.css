@@ -1,6 +1,6 @@
 body {
     font: rgb(44, 0, 0);  
-    background-color: wheat;
+    background-color: #eaffd0;
     display: flex;
     flex-direction: column;
   }
