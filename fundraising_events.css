@@ -1,20 +1,20 @@
 body{
 text-align: center;
-background: #00ECB9;
-  font-family: sans-serif;
+background: wheat;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 100;
 }
 
 h1{
-  color: #396;
+  color: rgb(44,0,0);
   font-weight: 100;
   font-size: 40px;
   margin: 40px 0px 20px;
 }
 
 #clockdiv{
-font-family: sans-serif;
-color: #fff;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: rgb(44,0,0);
 display: inline-block;
 font-weight: 100;
 text-align: center;
@@ -24,18 +24,19 @@ font-size: 30px;
 #clockdiv > div{
 padding: 10px;
 border-radius: 3px;
-background: #00BF96;
+background: rgb(66,0,0);
 display: inline-block;
 }
 
 #clockdiv div > span{
 padding: 15px;
 border-radius: 3px;
-background: #00816A;
+background: wheat;
 display: inline-block;
 }
 
 .smalltext{
 padding-top: 5px;
+color:wheat;
 font-size: 16px;
 }

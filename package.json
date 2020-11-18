@@ -1,0 +1,28 @@
+{
+  "name": "kickball_reg_form",
+  "version": "1.0.0",
+  "description": "Team registration form for annual kickball fundraiser",
+  "main": "regForm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpilbean/JPs_Porcelain_Punishers.git"
+  },
+  "keywords": [
+    "registration",
+    "form",
+    "team",
+    "kickball",
+    "signup",
+    "sign-up",
+    "register"
+  ],
+  "author": "Kate Pilbean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpilbean/JPs_Porcelain_Punishers/issues"
+  },
+  "homepage": "https://github.com/kpilbean/JPs_Porcelain_Punishers#readme"
+}
