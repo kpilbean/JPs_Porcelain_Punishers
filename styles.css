@@ -1,4 +1,5 @@
 body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font: rgb(44, 0, 0);  
     background-color: wheat;
     display: flex;
@@ -12,7 +13,7 @@ body {
   h1 {
     font: rgb(44, 0, 0);
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
   }
   
@@ -21,7 +22,7 @@ body {
       flex-direction: column;
       font: rgb(44, 0, 0);
       /* justify-content: space-between; */
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       text-align: right;
   }
   
@@ -40,7 +41,7 @@ body {
     font: rgb(44, 0, 0);
     font-size: 15px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left; 
     padding-left: 0.5cm;
     padding-right: 0.5cm;
@@ -50,7 +51,7 @@ body {
   p {
     font: rgb(44, 0, 0);
     font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
     padding-left: 0.5cm;
     padding-right: 0.5cm;
@@ -61,14 +62,14 @@ body {
     font: white;
     font-size: 12px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center; 
     }
   
   h4 {
     font: white;
     font-size: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center; 
   }
   
@@ -306,9 +307,9 @@ body {
   /* Photo Carousel/Slideshow Caption text */
   @media only screen and (max-width: 769px) {
     .slidetext {
-      font-size: 10px;
+      font-size: 12px;
     }
     .numbertext {
-      font-size: 8px;
+      font-size: 10px;
     }
   }
