@@ -83,27 +83,24 @@
             </p> 
             <br /> 
 
-            <!-- <p> 
-                SELECT YOUR COURSE 
-                <select type="text" value="" name="Subject"> 
-                    <option>BTECH</option> 
-                    <option>BBA</option> 
-                    <option>BCA</option> 
-                    <option>B.COM</option> 
-                    <option>GEEKFORGEEKS</option> 
-                </select> 
-            </p> 
-            <br />  -->
-
-            <p> 
+            <button> 
                 <input type="submit" 
                     value="Submit" name="submit" /> 
+            </button> 
+
+            <button> 
                 <input type="reset" 
                     value="Reset" name="reset" /> 
-            </p> 
+            </button> 
+
         </form> 
 
         <script src="/regForm.js"></script>
+
+        <script src="nedb.min.js"></script>
+        <script>
+            var db = new Nedb();   // Create an in-memory only datastore
+        </script>    
 
     </body> 
 

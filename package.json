@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/kpilbean/JPs_Porcelain_Punishers/issues"
   },
-  "homepage": "https://github.com/kpilbean/JPs_Porcelain_Punishers#readme"
+  "homepage": "https://github.com/kpilbean/JPs_Porcelain_Punishers#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
+  }
 }
