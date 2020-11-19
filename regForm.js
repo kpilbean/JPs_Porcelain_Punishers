@@ -15,25 +15,27 @@ teamRegForm.onsubmit = function(event) {
 
 
 // Still attempting to create db on server and post form entries to it
-const options = {
-	method: "POST",
-	headers: {
-		'Content-Type': 'application/json'
-	 	},
-	body: JSON.stringify(data)
-};
-const response = fetch('/teamDatabase.db', options);
-const json = response.json();
-console.log(json);
+// const options = {
+// 	method: "POST",
+// 	headers: {
+// 		'Content-Type': 'application/json'
+// 	 	},
+// 	body: JSON.stringify(formData)
+// };
+// const response = fetch('/teamDatabase.db', options);
+// const json = response.json();
+// console.log(json);
 
 
 // Verify Email Entered is Valid
-function ValidateEmail(email) {
-	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(regForm.email.input)) {
-		return (true)
-		} else alert("You have entered an invalid email address!")
-		return (false)
+const email = document.getElementsByName("email");
+email.addEventListener("input", function (event) {
+	if (email.validity.typeMismatch) {
+		email.setCustomValidity("Please enter a valid email address.");
+	} else {
+		email.setCustomValidity("");
 	}
+});
 
 
 // const Datastore = require('nedb'),
