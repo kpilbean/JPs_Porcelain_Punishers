@@ -1,4 +1,3 @@
-const express = require('express');
 const Datastore = require('nedb'),
 db = new Datastore({
 	filename: './teamDatabase.db',
@@ -7,6 +6,7 @@ db = new Datastore({
 db.insert({ name: "Jack", teamName: "JPs Porcelain Punishers" });
 console.log(db);
 
+const express = require('express');
 const app = express();
 app.listen(3000, () => console.log('listening at 3000'));
 app.use(express.static('public'));
@@ -49,12 +49,10 @@ const response = fetch('/teamDatabase.db', options);
 const json = response.json();
 console.log(json);
 
-
-
-	// function ValidateEmail(email) {
-	// 	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value)) {
-	// 		return (true)
-	// 	  } alert("You have entered an invalid email address!")
-	// 	return (false)
-	// 	}
+function ValidateEmail(email) {
+	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(regForm.email.value)) {
+		return (true)
+		} else alert("You have entered an invalid email address!")
+		return (false)
+	}
 

@@ -28,6 +28,7 @@
   "dependencies": {
     "clientside-require": "^4.7.2",
     "express": "^4.17.1",
-    "nedb": "^1.8.0"
+    "nedb": "^1.8.0",
+    "requirejs": "^2.3.6"
   }
 }

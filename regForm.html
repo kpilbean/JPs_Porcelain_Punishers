@@ -22,7 +22,7 @@
 
         <br />
         
-        <form class="RegForm" name="RegForm" action="/teamDatabase.db" method="post"> 
+        <form class="regForm" name="regForm" action="/teamDatabase.db" method="post"> 
 
             <p>Team Name: <input type="text" 
                required size="55" name="teamName" /></p> 
@@ -35,7 +35,8 @@
                 required size="55" name="address" /></p> 
             <br /> 
             <p>Captain E-mail Address: <input type="text" 
-                required size="55" name="email" /></p> 
+                required size="55" name="email" />
+                function(ValidateEmail)</p> 
             <br /> 
             <p>Captain Phone Number: <input type="text" 
                 required size="55" name="phone" /></p> 
@@ -87,8 +88,6 @@
             <button type="reset">Reset</button>
 
         </form> 
-
-        <script src = "node_modules/clientside-require/dist/bundle.js"></script>
 
         <script src="/regForm.js"></script>
 
