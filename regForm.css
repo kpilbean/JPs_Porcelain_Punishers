@@ -1,4 +1,4 @@
-body, div { 
+body { 
 	box-sizing: border-box; 
 	width: 100%; 
 	border: 100px solid rgb(44, 0, 0); 
@@ -19,8 +19,10 @@ form {
 }
 
 button {
+	display: flexbox;
+	align-content: center;
 	align-items: center;
-	float: center;
+	justify-content: center;
 	color: rgb(44, 0, 0);
 	text-align: center;
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

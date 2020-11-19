@@ -10,6 +10,7 @@
 
     <body>
 
+        <!-- Team Registration Form -->
         <h1 style="text-align: center">KICKBALL TEAM REGISTRATION FORM</h1>
         
         <h2 style="text-align: center">
@@ -21,8 +22,28 @@
         </h2>
 
         <br />
-        
-        <form class="regForm" name="regForm" action="/teamDatabase.db" method="post"> 
+ 
+        <form id='regForm' action="/teamDatabase.db" method="post">
+            <p>Team Name: <input type="text" required size="55" name='teamName' /><br /></p>
+            <p>Captain Name: <input type="text" required size="55" name='name' /><br /></p>
+            <p>Captain Address: <input type="text" required size="55" name='address' /><br /></p>
+            <p>Captain E-mail: <input type="text" required size="55" name='email' /><br /></p>
+            <p>Captain Phone: <input type="text" required size="55" name='phone' /><br /></p>
+            <p>Player 2 Name: <input type="text" required size="55" name='p2Name' /><br /></p>
+            <p>Player 3 Name: <input type="text" required size="55" name='p3Name' /><br /></p>
+            <p>Player 4 Name: <input type="text" required size="55" name='p4Name' /><br /></p>
+            <p>Player 5 Name: <input type="text" required size="55" name='p5Name' /><br /></p>
+            <p>Player 6 Name: <input type="text" required size="55" name='p6Name' /><br /></p>
+            <p>Player 7 Name: <input type="text" required size="55" name='p7Name' /><br /></p>
+            <p>Player 8 Name: <input type="text" required size="55" name='p8Name' /><br /></p>
+            <p>Player 9 Name: <input type="text" required size="55" name='p9Name' /><br /></p>
+            <p>Player 10 Name: <input type="text" required size="55" name='p10Name' /><br /></p>
+            <p>Comments: <input type="text" size="55" name='comments' /><br /></p>
+            <button type="submit">Submit</button> 
+            <button type="reset">Reset</button>
+        </form>       
+<!-- 
+        <form class="regForm" name="regForm" action="/teamDatabase.db"> 
 
             <p>Team Name: <input type="text" 
                required size="55" name="teamName" /></p> 
@@ -62,7 +83,7 @@
                 required size="55" name="p6Name" /></p> 
             <br /> 
 
-            <p>Player#7 Name: <input type="text" 
+            <p>Player 7 Name: <input type="text" 
                 required size="55" name="p7Name" /></p> 
             <br /> 
 
@@ -87,15 +108,15 @@
 
             <button type="reset">Reset</button>
 
-        </form> 
+        </form>  -->
 
-        <script src="/regForm.js"></script>
-
-        <!-- <script src="nedb.min.js"></script>
-        <script>
+        <!-- <script src="nedb.min.js"></script> -->
+        <!-- <script>
             var db = new Nedb();   // Create an in-memory only datastore
         </script>     -->
 
-    </body> 
+        <script src="/regForm.js"></script>
+
+     </body> 
 
 </html>

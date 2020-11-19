@@ -1,43 +1,20 @@
-const Datastore = require('nedb'),
-db = new Datastore({
-	filename: './teamDatabase.db',
-	autoload: true
-});
-db.insert({ name: "Jack", teamName: "JPs Porcelain Punishers" });
-console.log(db);
+// Constructs FormData and posts to httpbin as well as console
+var teamRegForm = document.getElementById('regForm');
+teamRegForm.onsubmit = function(event) {
+	event.preventDefault();
 
-const express = require('express');
-const app = express();
-app.listen(3000, () => console.log('listening at 3000'));
-app.use(express.static('public'));
-app.use(express.json({ limit: '1mb' }));
+	var request = new XMLHttpRequest();
+		// POST to httpbin which returns the POST data as JSON
+		request.open('POST', 'https://httpbin.org/post', /* async = */ false);
 
-app.post('/teamDatabase.db', (request, response) => {
-	console.log("A team just registered!");
-	console.log(request.body);
-	const data = request.body;
-	response.json({
-		status: "POST team registration to Team Database",
-		teamName: data.teamName,
-		name: data.name,
-		address: data.address,
-		email: data.email,
-		phone: data.phone,
-		p2Name: data.p2Name,
-		p3Name: data.p3Name,
-		p4Name: data.p4Name,
-		p5Name: data.p5Name,
-		p6Name: data.p6Name,
-		p7Name: data.p7Name,
-		p8Name: data.p8Name,
-		p9Name: data.p9Name,
-		p10Name: data.p10Name,
-		comments: data.comments
-	});
-});
+	var formData = new FormData(document.getElementById('regForm'));
+	request.send(formData);
 
-// const data = { teamName, name, address, email, phone, p2Name, p3Name, p4Name, p5Name, p6Name, p7Name, p8Name, p9Name, p10Name }
+	console.log(request.response);
+}
 
+
+// Still attempting to create db on server and post form entries to it
 const options = {
 	method: "POST",
 	headers: {
@@ -49,10 +26,52 @@ const response = fetch('/teamDatabase.db', options);
 const json = response.json();
 console.log(json);
 
+
+// Verify Email Entered is Valid
 function ValidateEmail(email) {
-	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(regForm.email.value)) {
+	if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(regForm.email.input)) {
 		return (true)
 		} else alert("You have entered an invalid email address!")
 		return (false)
 	}
 
+
+// const Datastore = require('nedb'),
+// // db = new Datastore({
+// // 	filename: './teamDatabase.db',
+// // 	autoload: true
+// // });
+// // db.insert({ name: "Jack", teamName: "JPs Porcelain Punishers" });
+// // console.log(db);
+
+// const express = require('express');
+// const app = express();
+// app.listen(3000, () => console.log('listening at 3000'));
+// app.use(express.static('public'));
+// app.use(express.json({ limit: '1mb' }));
+
+// app.post('/teamDatabase.db', (request, response) => {
+// 	console.log("A team just registered!");
+// 	console.log(request.body);
+// 	const data = request.body;
+// 	response.json({
+// 		status: "POST team registration to Team Database",
+// 		teamName: data.teamName,
+// 		name: data.name,
+// 		address: data.address,
+// 		email: data.email,
+// 		phone: data.phone,
+// 		p2Name: data.p2Name,
+// 		p3Name: data.p3Name,
+// 		p4Name: data.p4Name,
+// 		p5Name: data.p5Name,
+// 		p6Name: data.p6Name,
+// 		p7Name: data.p7Name,
+// 		p8Name: data.p8Name,
+// 		p9Name: data.p9Name,
+// 		p10Name: data.p10Name,
+// 		comments: data.comments
+// 	});
+// });
+
+// // const data = { teamName, name, address, email, phone, p2Name, p3Name, p4Name, p5Name, p6Name, p7Name, p8Name, p9Name, p10Name }
