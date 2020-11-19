@@ -22,85 +22,80 @@
 
         <br />
         
-        <form class="RegForm" name="RegForm" action="/submit.php" 
-            onsubmit="return TeamRegForm()" method="post"> 
+        <form class="RegForm" name="RegForm" action="/teamDatabase.db" method="post"> 
 
             <p>Team Name: <input type="text" 
-                size="55" name="teamName" /></p> 
+               required size="55" name="teamName" /></p> 
             <br /> 
 
             <p>Captain Name: <input type="text" 
-                size="55" name="name" /></p> 
+                required size="55" name="name" /></p> 
             <br /> 
             <p>Captain Address: <input type="text" 
-                size="55" name="address" /></p> 
+                required size="55" name="address" /></p> 
             <br /> 
             <p>Captain E-mail Address: <input type="text" 
-                size="55" name="email" /></p> 
+                required size="55" name="email" /></p> 
             <br /> 
             <p>Captain Phone Number: <input type="text" 
-                size="55" name="phone" /></p> 
+                required size="55" name="phone" /></p> 
             <br /> 
 
             <p>Player 2 Name: <input type="text" 
-                size="55" name="p2Name" /></p> 
+                required size="55" name="p2Name" /></p> 
             <br /> 
 
             <p>Player 3 Name: <input type="text" 
-                size="55" name="p3Name" /></p> 
+                required size="55" name="p3Name" /></p> 
             <br /> 
 
             <p>Player 4 Name: <input type="text" 
-                size="55" name="p4Name" /></p> 
+                required size="55" name="p4Name" /></p> 
             <br /> 
 
             <p>Player 5 Name: <input type="text" 
-                size="55" name="p5Name" /></p> 
+                required size="55" name="p5Name" /></p> 
             <br /> 
 
             <p>Player 6 Name: <input type="text" 
-                size="55" name="p6Name" /></p> 
+                required size="55" name="p6Name" /></p> 
             <br /> 
 
             <p>Player#7 Name: <input type="text" 
-                size="55" name="p7Name" /></p> 
+                required size="55" name="p7Name" /></p> 
             <br /> 
 
             <p>Player 8 Name: <input type="text" 
-                size="55" name="p8Name" /></p> 
+                required size="55" name="p8Name" /></p> 
             <br /> 
 
             <p>Player 9 Name: <input type="text" 
-                size="55" name="p9Name" /></p> 
+                required size="55" name="p9Name" /></p> 
             <br /> 
 
             <p>Player 10 Name: <input type="text" 
-                size="55" name="p10Name" /></p> 
+                required size="55" name="p10Name" /></p> 
             <br /> 
 
             <p>Comments: <textarea cols="60" 
-                name="comments"> </textarea>
+                required name="comments"> </textarea>
             </p> 
             <br /> 
 
-            <button> 
-                <input type="submit" 
-                    value="Submit" name="submit" /> 
-            </button> 
+            <button type="submit">Submit</button> 
 
-            <button> 
-                <input type="reset" 
-                    value="Reset" name="reset" /> 
-            </button> 
+            <button type="reset">Reset</button>
 
         </form> 
 
+        <script src = "node_modules/clientside-require/dist/bundle.js"></script>
+
         <script src="/regForm.js"></script>
 
-        <script src="nedb.min.js"></script>
+        <!-- <script src="nedb.min.js"></script>
         <script>
             var db = new Nedb();   // Create an in-memory only datastore
-        </script>    
+        </script>     -->
 
     </body> 
 

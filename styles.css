@@ -7,7 +7,9 @@ body {
   }
   
   .main-header {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   h1 {
