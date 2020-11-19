@@ -1,4 +1,4 @@
-body { 
+body, div { 
 	box-sizing: border-box; 
 	width: 100%; 
 	border: 100px solid rgb(44, 0, 0); 
