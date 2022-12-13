@@ -27,7 +27,7 @@
   "homepage": "https://github.com/kpilbean/JPs_Porcelain_Punishers#readme",
   "dependencies": {
     "clientside-require": "^4.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nedb": "^1.8.0",
     "requirejs": "^2.3.6"
   }
